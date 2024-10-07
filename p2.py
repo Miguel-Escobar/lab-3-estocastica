@@ -34,6 +34,7 @@ if __name__ == "__main__":
     alpha = 1.0
     nf = 10_000
     constante = 1.0#((nf - 1) * 4 * np.sqrt(2) ** alpha)
+    frame_skipping = 10 # Número de frames que se saltan para la animación, para que no sea tan pesada.
     posiciones = np.random.rand(N, 2)
     caminos, integrales = vendedorViajeroSA(constante, posiciones, alpha, nf)
 
@@ -59,5 +60,8 @@ if __name__ == "__main__":
         beta_text.set_text(f"$\\beta = {beta_sucesión[i]:.2f}$")
         return line_integral[0], line_camino[0], beta_text
     
-    anim = FuncAnimation(fig, update, frames=range(1, nf), interval = 10, blit=False)
-    plt.show()
+    anim = FuncAnimation(fig, update, frames=range(1, nf, frame_skipping), interval = 10, blit=False)
+    if input("¿Desea guardar la animación? (Se toma un buen rato) (s/n): ") == "s":
+        anim.save("vendedor_viajero.mp4", fps=30) 
+    else:
+        plt.show()
