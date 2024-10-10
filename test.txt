@@ -1,0 +1,20 @@
+         42 function calls in 0.000 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        5    0.000    0.000    0.000    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        5    0.000    0.000    0.000    0.000 /Users/miguel/.pyenv/versions/3.11.0/lib/python3.11/site-packages/numpy/core/fromnumeric.py:69(_wrapreduction)
+        4    0.000    0.000    0.000    0.000 <__array_function__ internals>:177(all)
+        4    0.000    0.000    0.000    0.000 /Users/miguel/.pyenv/versions/3.11.0/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2432(all)
+        5    0.000    0.000    0.000    0.000 /Users/miguel/.pyenv/versions/3.11.0/lib/python3.11/site-packages/numpy/core/fromnumeric.py:70(<dictcomp>)
+        5    0.000    0.000    0.000    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        1    0.000    0.000    0.000    0.000 <__array_function__ internals>:177(prod)
+        1    0.000    0.000    0.000    0.000 /Users/miguel/.pyenv/versions/3.11.0/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2955(prod)
+        5    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        4    0.000    0.000    0.000    0.000 /Users/miguel/.pyenv/versions/3.11.0/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2427(_all_dispatcher)
+        1    0.000    0.000    0.000    0.000 /Users/miguel/.pyenv/versions/3.11.0/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2950(_prod_dispatcher)
+
+
